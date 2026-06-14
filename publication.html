@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Lab | UNSW Sydney</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            background-color: #ffffff;
+            background-image:
+                radial-gradient(circle at 18px 18px, rgba(30, 41, 59, 0.06) 0 2px, transparent 2.5px),
+                radial-gradient(circle at 78px 58px, rgba(255, 196, 37, 0.09) 0 2px, transparent 2.5px),
+                linear-gradient(90deg, rgba(30, 41, 59, 0.035) 1px, transparent 1px),
+                linear-gradient(0deg, rgba(30, 41, 59, 0.03) 1px, transparent 1px);
+            background-size: 120px 80px, 120px 80px, 120px 80px, 120px 80px;
+            background-position: 0 0, 0 0, 18px 18px, 18px 18px;
+            color: #1a1a1a;
+        }
+        h1, h2, h3, h4, nav, .section-title {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            background:
+                linear-gradient(135deg, transparent 0 32%, rgba(30, 41, 59, 0.028) 32.3% 33%, transparent 33.3% 100%),
+                linear-gradient(45deg, transparent 0 58%, rgba(255, 196, 37, 0.035) 58.3% 59%, transparent 59.3% 100%);
+            background-size: 360px 240px;
+            opacity: 0.75;
+        }
+        .section-title {
+            font-size: 1rem;
+            font-weight: 900;
+            color: #b91c1c;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-bottom: 2px solid #b91c1c;
+            padding-bottom: 2px;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+        .double-divider { height: 1px; background: linear-gradient(90deg, rgba(185, 28, 28, 0.65), rgba(255, 196, 37, 0.7), rgba(26, 26, 26, 0.12)); margin: 2rem 0; }
+        .justify-news { text-align: justify; text-justify: inter-word; }
+    </style>
+</head>
+<body class="min-h-screen">
+    <div class="min-h-screen w-full px-5 py-8 md:px-12 md:py-10">
+        <header class="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-6 mb-8">
+            <div>
+                <h1 class="text-2xl md:text-3xl font-black tracking-normal uppercase leading-none">Microfluidics and Microfabrication <span class="font-light">Lab</span></h1>
+                <p class="text-[10px] font-bold tracking-[0.16em] uppercase mt-2 text-gray-500">Mechanical & Manufacturing Engineering | UNSW Sydney</p>
+            </div>
+            <nav class="flex flex-nowrap items-center justify-start lg:justify-end gap-5 text-xs font-bold uppercase tracking-widest italic whitespace-nowrap overflow-x-auto max-w-full">
+                <a href="index.html" class="hover:text-red-800 border-b border-transparent hover:border-red-800">Home</a>
+                <a href="about-us.html" class="hover:text-red-800 border-b border-transparent hover:border-red-800">About Us</a>
+                <a href="research.html" class="hover:text-red-800 border-b border-transparent hover:border-red-800">Research</a>
+                <a href="publication.html" class="text-red-800 border-b border-red-800">Publications</a>
+                <a href="join-us.html" class="hover:text-red-800 border-b border-transparent hover:border-red-800">Join Us</a>
+            </nav>
+        </header>
+        <div class="double-divider"></div>
+        <main>
+            <section class="mb-16">
+                <span class="section-title">Selected Publications</span>
+                <div class="mb-10">
+                    <h3 class="text-sm font-black text-gray-400 uppercase tracking-widest border-b border-gray-100 mb-6 flex items-center">
+                        2026 <span class="ml-4 flex-grow h-[1px] bg-gray-50"></span>
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="group">
+                            <h4 class="text-[14px] font-bold leading-tight group-hover:text-red-800 transition">Antifouling zwitterionic coating enhances electrochemical aptamer-based sensors for therapeutic drug monitoring</h4>
+                            <p class="text-[12px] mt-2 text-gray-600 leading-relaxed justify-news">Duan H; Peng S; He S; Tang SY; Goda K; Wang CH; <b>Li M</b>, 2026, <i>Nano Today</i>, 66, <a href="http://dx.doi.org/10.1016/j.nantod.2025.102892" target="_blank" class="text-red-800 hover:underline font-mono text-[10px]">DOI: 10.1016/j.nantod.2025.102892</a></p>
+                        </div>
+                        <div class="group">
+                            <h4 class="text-[14px] font-bold leading-tight group-hover:text-red-800 transition">Droplet Digital CRISPR for Nucleic Acid Detection</h4>
+                            <p class="text-[12px] mt-2 text-gray-600 leading-relaxed justify-news">Zhang Y; Walker RSK; Sunna A; Barber TJ; <b>Li M</b>, 2026, <i>Advanced Science</i>, <a href="http://dx.doi.org/10.1002/advs.202517470" target="_blank" class="text-red-800 hover:underline font-mono text-[10px]">DOI: 10.1002/advs.202517470</a></p>
+                        </div>
+                        <div class="group">
+                            <h4 class="text-[14px] font-bold leading-tight group-hover:text-red-800 transition">Particle separation by passive microfluidics and their downstream assays</h4>
+                            <p class="text-[12px] mt-2 text-gray-600 leading-relaxed justify-news">Zhou T; Zhang T; Yalikun Y; Hosokawa Y; Cui Q; Tian G; Feng S; <b>Li M</b>, 2026, <i>Sensors and Actuators B Chemical</i>, 450, <a href="http://dx.doi.org/10.1016/j.snb.2025.139295" target="_blank" class="text-red-800 hover:underline font-mono text-[10px]">DOI: 10.1016/j.snb.2025.139295</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-10">
+                    <h3 class="text-sm font-black text-gray-400 uppercase tracking-widest border-b border-gray-100 mb-6 flex items-center">
+                        2025 <span class="ml-4 flex-grow h-[1px] bg-gray-50"></span>
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="group">
+                            <h4 class="text-[14px] font-bold leading-tight group-hover:text-red-800 transition">Design advances in pinched flow fractionation for enhanced particle separation in microfluidics</h4>
+                            <p class="text-[12px] mt-2 text-gray-600 leading-relaxed justify-news">Cui Q; Tian G; Zhou T; Shen Y; Feng S; <b>Li M</b>; Li W; Hosokawa Y; Yalikun Y; Zhang T, 2025, <i>Lab on A Chip</i>, 25, pp. 4290 - 4308, <a href="http://dx.doi.org/10.1039/d5lc00497g" target="_blank" class="text-red-800 hover:underline font-mono text-[10px]">DOI: 10.1039/d5lc00497g</a></p>
+                        </div>
+                        <div class="group">
+                            <h4 class="text-[14px] font-bold leading-tight group-hover:text-red-800 transition">Wearable Electrochemical Biosensors for Advanced Healthcare Monitoring</h4>
+                            <p class="text-[12px] mt-2 text-gray-600 leading-relaxed justify-news">Duan H; Peng S; He S; Tang SY; Goda K; Wang CH; <b>Li M</b>, 2025, <i>Advanced Science</i>, 12, <a href="http://dx.doi.org/10.1002/advs.202411433" target="_blank" class="text-red-800 hover:underline font-mono text-[10px]">DOI: 10.1002/advs.202411433</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="mt-16 pt-6 border-t-2 border-black flex flex-col md:flex-row justify-between items-center text-[10px] font-bold uppercase tracking-[0.2em] text-gray-500">
+            <div>Email</div>
+            <div class="my-4 md:my-0 text-red-800 border border-red-800 px-4 py-1">Join the Group</div>
+            <div>Sydney, NSW 2052</div>
+        </footer>
+    </div>
+</body>
+</html>
