@@ -3,243 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Microfluidics and Microfabrication Lab at UNSW Sydney engineers micro-scale systems for better diagnostics, monitoring, and therapies.">
     <title>Ming Li Lab | UNSW Sydney</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body { 
-            font-family: "Times New Roman", Times, serif; 
-            background-color: #ffffff;
-            background-image:
-                radial-gradient(circle at 18px 18px, rgba(30, 41, 59, 0.06) 0 2px, transparent 2.5px),
-                radial-gradient(circle at 78px 58px, rgba(255, 196, 37, 0.09) 0 2px, transparent 2.5px),
-                linear-gradient(90deg, rgba(30, 41, 59, 0.035) 1px, transparent 1px),
-                linear-gradient(0deg, rgba(30, 41, 59, 0.03) 1px, transparent 1px);
-            background-size: 120px 80px, 120px 80px, 120px 80px, 120px 80px;
-            background-position: 0 0, 0 0, 18px 18px, 18px 18px;
-            color: #1a1a1a;
-        }
-        h1, h2, h3, h4, nav, .section-title {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-        }
-        body::before {
-            content: "";
-            position: fixed;
-            inset: 0;
-            pointer-events: none;
-            background:
-                linear-gradient(135deg, transparent 0 32%, rgba(30, 41, 59, 0.028) 32.3% 33%, transparent 33.3% 100%),
-                linear-gradient(45deg, transparent 0 58%, rgba(255, 196, 37, 0.035) 58.3% 59%, transparent 59.3% 100%);
-            background-size: 360px 240px;
-            opacity: 0.75;
-        }
-        /* 报纸风格的板块标题：使用下划线和暗红色 */
-        .section-title {
-            font-size: 1rem;
-            font-weight: 900;
-            color: #b91c1c;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            border-bottom: 2px solid #b91c1c;
-            padding-bottom: 2px;
-            margin-bottom: 1.5rem;
-            display: block;
-        }
-        .double-divider {
-            height: 1px;
-            background: linear-gradient(90deg, rgba(185, 28, 28, 0.65), rgba(255, 196, 37, 0.7), rgba(26, 26, 26, 0.12));
-            margin: 2rem 0;
-        }
-        .col-divider {
-            border-right: 1px solid #e5e5e5;
-        }
-        .justify-news { text-align: justify; text-justify: inter-word; }
-        .image-track {
-            display: flex;
-            width: max-content;
-            animation: lab-scroll 28s linear infinite;
-        }
-        .image-track:hover {
-            animation-play-state: paused;
-        }
-        @keyframes lab-scroll {
-            from { transform: translateX(0); }
-            to { transform: translateX(-50%); }
-        }
-    </style>
+    <script>document.documentElement.classList.add('js-enabled');</script>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="min-h-screen">
-
-    <div class="min-h-screen w-full px-5 py-8 md:px-12 md:py-10">
-        
-        <header class="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-6 mb-8">
-            <div>
-                <h1 class="text-2xl md:text-3xl font-black tracking-normal uppercase leading-none">Microfluidics and Microfabrication <span class="font-light">Lab</span></h1>
-                <p class="text-[10px] font-bold tracking-[0.16em] uppercase mt-2 text-gray-500">Mechanical & Manufacturing Engineering | UNSW Sydney</p>
-            </div>
-            <nav class="flex flex-nowrap items-center justify-start lg:justify-end gap-5 text-xs font-bold uppercase tracking-widest italic whitespace-nowrap overflow-x-auto max-w-full">
-                <a href="#home" class="hover:text-red-800 border-b border-transparent hover:border-red-800">Home</a>
-                <a href="about-us.html" class="hover:text-red-800 border-b border-transparent hover:border-red-800">About Us</a>
-                <a href="research.html" class="hover:text-red-800 border-b border-transparent hover:border-red-800">Research</a>
-                <a href="publication.html" class="hover:text-red-800 border-b border-transparent hover:border-red-800">Publications</a>
-                <a href="join-us.html" class="hover:text-red-800 border-b border-transparent hover:border-red-800">Join Us</a>
+<body class="home-page">
+    <header class="site-header">
+        <div class="site-container nav-shell">
+            <a class="brand" href="index.html" aria-label="Ming Li Lab home">
+                <span class="brand-mark">ML</span>
+                <span><strong>Microfluidics &amp; Microfabrication</strong><small>Lab · UNSW Sydney</small></span>
+            </a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a class="active" href="index.html">Home</a>
+                <a href="research.html">Research</a>
+                <a href="about-us.html">Our People</a>
+                <a href="publication.html">Publications</a>
+                <a href="join-us.html">Join Us</a>
             </nav>
-        </header>
-
-        <div class="double-divider"></div>
-
-        <main id="home">
-                <section class="mb-16 overflow-hidden border-y border-slate-200 py-5">
-                    <div class="image-track gap-5">
-                        <div class="w-72 md:w-96 h-44 md:h-56 bg-slate-50 border border-slate-200 flex items-center justify-center shrink-0">
-                            <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Lab Image 01</span>
-                        </div>
-                        <div class="w-72 md:w-96 h-44 md:h-56 bg-slate-50 border border-slate-200 flex items-center justify-center shrink-0">
-                            <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Lab Image 02</span>
-                        </div>
-                        <div class="w-72 md:w-96 h-44 md:h-56 bg-slate-50 border border-slate-200 flex items-center justify-center shrink-0">
-                            <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Lab Image 03</span>
-                        </div>
-                        <div class="w-72 md:w-96 h-44 md:h-56 bg-slate-50 border border-slate-200 flex items-center justify-center shrink-0">
-                            <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Lab Image 04</span>
-                        </div>
-                        <div class="w-72 md:w-96 h-44 md:h-56 bg-slate-50 border border-slate-200 flex items-center justify-center shrink-0">
-                            <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Lab Image 01</span>
-                        </div>
-                        <div class="w-72 md:w-96 h-44 md:h-56 bg-slate-50 border border-slate-200 flex items-center justify-center shrink-0">
-                            <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Lab Image 02</span>
-                        </div>
-                        <div class="w-72 md:w-96 h-44 md:h-56 bg-slate-50 border border-slate-200 flex items-center justify-center shrink-0">
-                            <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Lab Image 03</span>
-                        </div>
-                        <div class="w-72 md:w-96 h-44 md:h-56 bg-slate-50 border border-slate-200 flex items-center justify-center shrink-0">
-                            <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Lab Image 04</span>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="biography" class="mb-16">
-                    <span class="section-title">Principal Investigator</span>
-                    <div class="flex flex-col md:flex-row gap-8 items-start">
-                        <div class="text-sm justify-news leading-loose">
-                            <p class="mb-4">
-                                <b>Test
-                            <p>
-                                Test
-                            </p>
-                        </div>
-                        <div class="w-32 h-40 bg-gray-50 border border-gray-200 flex-shrink-0 flex items-center justify-center grayscale opacity-60">
-                            <span class="text-[9px] uppercase tracking-widest text-gray-400 rotate-90">Portrait</span>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="latest-news" class="mb-16">
-                    <span class="section-title">Latest News</span>
-                    <p class="text-lg font-bold leading-tight mb-6">
-                        "Microfluidics & Bio-MEMS for Global Health."
-                    </p>
-                    <div class="grid md:grid-cols-2 gap-8">
-                        <div class="border-t border-dotted border-gray-300 pt-4">
-                            <span class="text-[10px] font-bold text-red-800 uppercase bg-red-50 px-1">Feb 2026</span>
-                            <p class="text-sm italic mt-2 leading-relaxed">The group welcomes new doctoral candidates for the upcoming Autumn session.</p>
-                        </div>
-                        <div class="border-t border-dotted border-gray-300 pt-4">
-                            <span class="text-[10px] font-bold text-red-800 uppercase bg-red-50 px-1">Jan 2026</span>
-                            <p class="text-sm italic mt-2 leading-relaxed">Paper on Nano-Biosensors accepted for publication in Small Methods.</p>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="research" class="mb-16">
-                    <span class="section-title">Research Activities</span>
-                    <p class="text-sm justify-news leading-relaxed mb-6 italic text-gray-600">
-                        Our research leverages fluid mechanics, biomedical engineering, and advanced manufacturing to solve diagnostic and environmental challenges.
-                    </p>
-                    <div class="grid grid-cols-2 gap-8 text-[13px]">
-                        <div class="border-t border-gray-200 pt-4">
-                            <h4 class="font-bold text-red-800 uppercase mb-2">Primary Interests</h4>
-                            <p>Microfluidics, Biosensors, MEMS, and Lab-on-a-Chip.</p>
-                        </div>
-                        <div class="border-t border-gray-200 pt-4">
-                            <h4 class="font-bold text-red-800 uppercase mb-2">Applied Focus</h4>
-                            <p>Health assessment, diagnostics, and renewable energy.</p>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="publications" class="mb-16">
-    <span class="section-title">Selected Publications</span>
-    
-    <div class="mb-10">
-        <h3 class="text-sm font-black text-gray-400 uppercase tracking-widest border-b border-gray-100 mb-6 flex items-center">
-            2026 <span class="ml-4 flex-grow h-[1px] bg-gray-50"></span>
-        </h3>
-        <div class="space-y-6">
-            <div class="group">
-                <h4 class="text-[14px] font-bold leading-tight group-hover:text-red-800 transition">Antifouling zwitterionic coating enhances electrochemical aptamer-based sensors for therapeutic drug monitoring</h4>
-                <p class="text-[12px] mt-2 text-gray-600 leading-relaxed justify-news">
-                    Duan H; Peng S; He S; Tang SY; Goda K; Wang CH; <b>Li M</b>, 2026, <i>Nano Today</i>, 66, <a href="http://dx.doi.org/10.1016/j.nantod.2025.102892" target="_blank" class="text-red-800 hover:underline font-mono text-[10px]">DOI: 10.1016/j.nantod.2025.102892</a>
-                </p>
-            </div>
-            
-            <div class="group">
-                <h4 class="text-[14px] font-bold leading-tight group-hover:text-red-800 transition">Droplet Digital CRISPR for Nucleic Acid Detection</h4>
-                <p class="text-[12px] mt-2 text-gray-600 leading-relaxed justify-news">
-                    Zhang Y; Walker RSK; Sunna A; Barber TJ; <b>Li M</b>, 2026, <i>Advanced Science</i>, <a href="http://dx.doi.org/10.1002/advs.202517470" target="_blank" class="text-red-800 hover:underline font-mono text-[10px]">DOI: 10.1002/advs.202517470</a>
-                </p>
-            </div>
-
-            <div class="group">
-                <h4 class="text-[14px] font-bold leading-tight group-hover:text-red-800 transition">Particle separation by passive microfluidics and their downstream assays</h4>
-                <p class="text-[12px] mt-2 text-gray-600 leading-relaxed justify-news">
-                    Zhou T; Zhang T; Yalikun Y; Hosokawa Y; Cui Q; Tian G; Feng S; <b>Li M</b>, 2026, <i>Sensors and Actuators B Chemical</i>, 450, <a href="http://dx.doi.org/10.1016/j.snb.2025.139295" target="_blank" class="text-red-800 hover:underline font-mono text-[10px]">DOI: 10.1016/j.snb.2025.139295</a>
-                </p>
-            </div>
         </div>
-    </div>
+    </header>
 
-    <div class="mb-10">
-        <h3 class="text-sm font-black text-gray-400 uppercase tracking-widest border-b border-gray-100 mb-6 flex items-center">
-            2025 <span class="ml-4 flex-grow h-[1px] bg-gray-50"></span>
-        </h3>
-        <div class="space-y-6">
-            <div class="group">
-                <h4 class="text-[14px] font-bold leading-tight group-hover:text-red-800 transition">Design advances in pinched flow fractionation for enhanced particle separation in microfluidics</h4>
-                <p class="text-[12px] mt-2 text-gray-600 leading-relaxed justify-news">
-                    Cui Q; Tian G; Zhou T; Shen Y; Feng S; <b>Li M</b>; Li W; Hosokawa Y; Yalikun Y; Zhang T, 2025, <i>Lab on A Chip</i>, 25, pp. 4290 - 4308, <a href="http://dx.doi.org/10.1039/d5lc00497g" target="_blank" class="text-red-800 hover:underline font-mono text-[10px]">DOI: 10.1039/d5lc00497g</a>
-                </p>
+    <main>
+        <section class="mission-hero">
+            <div class="hero-glow hero-glow-one"></div>
+            <div class="hero-glow hero-glow-two"></div>
+            <div class="site-container hero-grid">
+                <div class="hero-copy">
+                    <h1>Detected,<br>Monitored,<br>and <em>Treated</em></h1>
+                    <p class="hero-intro">Our mission is to turn precise control at the smallest scales into practical biomedical technologies through droplet microfluidics, lab-on-chip platforms, and biosensors.</p>
+                    <div class="hero-actions">
+                        <a class="button button-yellow" href="#research-areas">Explore our research</a>
+                        <a class="text-link light-link" href="join-us.html">Work with us <span>↗</span></a>
+                    </div>
+                    <div class="hero-pillars" aria-label="Research outcomes">
+                        <span>Single-cell analysis</span>
+                        <span>Molecular diagnostics</span>
+                        <span>Precision therapeutics</span>
+                    </div>
+                </div>
+                <div class="hero-visual hero-cover-visual" aria-label="Microfluidic research cover artwork"><figure class="hero-cover-figure"><img src="assets/images/home-cover.jpg" alt="Cells flowing through a microfluidic platform"></figure><div class="hero-note">From micro-scale control to real-world biomedical impact.</div></div>
             </div>
+            <a class="scroll-cue" href="#research-areas"><span>Scroll to discover</span><i></i></a>
+        </section>
 
-            <div class="group">
-                <h4 class="text-[14px] font-bold leading-tight group-hover:text-red-800 transition">Wearable Electrochemical Biosensors for Advanced Healthcare Monitoring</h4>
-                <p class="text-[12px] mt-2 text-gray-600 leading-relaxed justify-news">
-                    Duan H; Peng S; He S; Tang SY; Goda K; Wang CH; <b>Li M</b>, 2025, <i>Advanced Science</i>, 12, <a href="http://dx.doi.org/10.1002/advs.202411433" target="_blank" class="text-red-800 hover:underline font-mono text-[10px]">DOI: 10.1002/advs.202411433</a>
-                </p>
+        <section id="latest-news" class="section-block latest-section reveal">
+            <div class="site-container">
+                <div class="section-heading-row">
+                    <div><p class="eyebrow">What’s happening</p><h2>Latest news</h2></div>
+                    <a class="text-link" href="publication.html">View all publications <span>↗</span></a>
+                </div>
+                <div class="news-text-list">
+                    <article class="news-text-item"><p class="news-date">June<br><strong>2026</strong></p><div><p class="card-meta">New publication · Small</p><h3>A Microwell Array Embedded Microfluidic Gradient Platform for Drug Screening on Tumor Spheroids</h3><p>Our new MEG platform combines high-throughput, size-controlled tumour spheroid culture with stable drug-gradient delivery.</p></div><a href="https://doi.org/10.1002/smll.202514775" target="_blank" rel="noopener" aria-label="Read paper">↗</a></article>
+                    <article class="news-text-item"><p class="news-date">May<br><strong>2026</strong></p><div><p class="card-meta">New publication · Advanced Healthcare Materials</p><h3>High-Throughput Generation of Tumor Spheroids via Droplet Microfluidics</h3><p>More than 50,000 droplets in five minutes create scalable 3D models for nanomedicine assessment.</p></div><a href="https://doi.org/10.1002/adhm.202503604" target="_blank" rel="noopener" aria-label="Read paper">↗</a></article>
+                    <article class="news-text-item"><p class="news-date">March<br><strong>2026</strong></p><div><p class="card-meta">New review · Advanced Science</p><h3>Droplet Digital CRISPR for Nucleic Acid Detection</h3><p>A review of digital partitioning, CRISPR specificity, absolute quantification, and portable diagnostics.</p></div><a href="https://doi.org/10.1002/advs.202517470" target="_blank" rel="noopener" aria-label="Read paper">↗</a></article>
+                </div>
             </div>
+        </section>
 
-            <div class="group">
-                <h4 class="text-[14px] font-bold leading-tight group-hover:text-red-800 transition">Stimuli-responsive smart materials enabled high-performance biosensors for liquid biopsies</h4>
-                <p class="text-[12px] mt-2 text-gray-600 leading-relaxed justify-news">
-                    Gao X; Bayinqiaoge B; <b>Li M</b>; Chandrawati R; Li X; Sun L; Wang CH; Zhang C; Tang SY, 2025, <i>Journal of Nanobiotechnology</i>, 23, <a href="http://dx.doi.org/10.1186/s12951-025-03541-5" target="_blank" class="text-red-800 hover:underline font-mono text-[10px]">DOI: 10.1186/s12951-025-03541-5</a>
-                </p>
+        <section id="research-areas" class="section-block research-home reveal">
+            <div class="site-container">
+                <div class="section-heading-row inverted">
+                    <div><p class="eyebrow light">What we explore</p><h2>Research areas</h2></div>
+
+                </div>
+                <div class="research-hover-grid">
+                    <a class="research-hover-card" href="research-droplet-microfluidics.html"><img src="assets/images/research-droplet-cover.jpg" alt="Droplet research cover"><div class="research-card-shade"></div><span class="research-number">01</span><div class="research-card-copy"><h3>Droplet</h3><p>High-throughput droplets for single-cell analysis, molecular detection, synthesis, and 3D culture.</p><span>Explore the research ↗</span></div></a>
+                    <a class="research-hover-card" href="research-lab-on-chip.html"><img src="assets/images/research-lab-on-chip-cover.jpg" alt="Lab on Chip research cover"><div class="research-card-shade"></div><span class="research-number">02</span><div class="research-card-copy"><h3>Lab on Chip</h3><p>Integrated microfluidic chips for cell analysis, controlled biological models, and drug screening.</p><span>Explore the research ↗</span></div></a>
+                    <a class="research-hover-card" href="research-biosensors.html">
+                        <img src="assets/images/research-biosensors-cover.jpg" alt="Biosensors research cover">
+                        <div class="research-card-shade"></div><span class="research-number">03</span>
+                        <div class="research-card-copy"><h3>Biosensors</h3><p>Integrated platforms for sensitive, selective, and continuous biomarker measurement.</p><span>Explore the research ↗</span></div>
+                    </a>
+                </div>
             </div>
+        </section>
 
-            <div class="group">
-                <h4 class="text-[14px] font-bold leading-tight group-hover:text-red-800 transition">Serendipity Engineering with Photonics: Harnessing the Unexpected in Biology and Medicine</h4>
-                <p class="text-[12px] mt-2 text-gray-600 leading-relaxed justify-news">
-                    Lee KCM; Peterson W; Lisi F; ... <b>Li M</b>; ... Goda K, 2025, <i>Progress in Electromagnetics Research</i>, 184, pp. 14 - 23, <a href="http://dx.doi.org/10.2528/PIER25100702" target="_blank" class="text-red-800 hover:underline font-mono text-[10px]">DOI: 10.2528/PIER25100702</a>
-                </p>
+        <section id="featured-publications" class="section-block publications-home reveal">
+            <div class="site-container">
+                <div class="section-heading-row"><div><p class="eyebrow">Selected output</p><h2>Featured publications</h2></div><a class="button button-outline" href="publication.html">Browse full publication list</a></div>
+                <div class="featured-pub-grid">
+                    <a class="featured-pub-card" href="https://doi.org/10.1002/advs.202517470" target="_blank" rel="noopener"><div class="featured-pub-image"><img src="assets/images/ddcrispr-overview.jpg" alt="Droplet digital CRISPR overview"></div><p>Advanced Science · 2026</p><h3>Droplet Digital CRISPR for Nucleic Acid Detection</h3><span>Read publication ↗</span></a>
+                    <a class="featured-pub-card" href="https://doi.org/10.1002/adhm.202503604" target="_blank" rel="noopener"><div class="featured-pub-image"><img src="assets/images/tumor-spheroids-droplet.jpg" alt="Tumour spheroid droplet platform"></div><p>Advanced Healthcare Materials · 2026</p><h3>High-Throughput Generation of Tumor Spheroids via Droplet Microfluidics</h3><span>Read publication ↗</span></a>
+                    <a class="featured-pub-card" href="https://doi.org/10.1016/j.nantod.2024.102310" target="_blank" rel="noopener"><div class="featured-pub-image"><img src="assets/images/research-nanomedicine-review.jpg" alt="Nanomedicine review overview"></div><p>Nano Today · 2024</p><h3>Blood-Brain Barrier Penetrating Nanosystems Enable Synergistic Therapy of Glioblastoma</h3><span>Read publication ↗</span></a>
+                </div>
             </div>
-        </div>
-    </div>
-</section>
-        </main>
+        </section>
 
-        <footer id="join" class="mt-16 pt-6 border-t-2 border-black flex flex-col md:flex-row justify-between items-center text-[10px] font-bold uppercase tracking-[0.2em] text-gray-500">
-            <div></div>
-            <div class="my-4 md:my-0 text-red-800 border border-red-800 px-4 py-1">Join the Group</div>
-            <div></div>
-        </footer>
-    </div>
+        <section id="students" class="section-block people-home reveal">
+            <div class="site-container">
+                <div class="section-heading-row"><div><p class="eyebrow">The team</p><h2>Researchers &amp; students</h2></div><a class="text-link" href="about-us.html">Meet the group <span>↗</span></a></div>
+                <div class="student-grid">
+                    <article class="student-card member-card" tabindex="0"><div class="member-photo"><img src="assets/images/team/yang-zhang.jpg" alt="Yang Zhang"><div class="member-overlay"><p class="member-kicker">Research focus</p><p class="member-description">My research focuses on developing a droplet digital microfluidic platform for CRISPR-based nucleic acid detection, integrating microfluidics and CRISPR/Cas techniques for quantitative molecular diagnostics and early disease detection.</p></div></div><h3>Yang Zhang</h3><p class="member-role">Postdoctoral Researcher</p></article>
+                    <article class="student-card member-card" tabindex="0"><div class="member-photo member-photo-placeholder"><strong>RK</strong><span>Photo coming soon</span><div class="member-overlay"><p class="member-kicker">Profile</p><p class="member-description">Research profile coming soon.</p></div></div><h3>Reza Khodadadi</h3><p class="member-role">PhD Candidate</p></article>
+                    <article class="student-card member-card" tabindex="0"><div class="member-photo"><img src="assets/images/team/yajing-sun.jpg" alt="Yajing Sun"><div class="member-overlay"><p class="member-kicker">Research focus</p><p class="member-description">My research focuses on developing multifunctional nanomedicine platforms for targeted brain tumour delivery and therapy.</p></div></div><h3>Yajing Sun</h3><p class="member-role">PhD Candidate</p></article>
+                    <article class="student-card member-card" tabindex="0"><div class="member-photo"><img src="assets/images/team/seyedmorteza-mousaviliavali.jpg" alt="Seyedmorteza Mousaviliavali"><div class="member-overlay"><p class="member-kicker">Research focus</p><p class="member-description">My research focuses on microfluidic droplet generation, microfluidic-based liposome production, and spatiotemporally controlled cargo delivery using temperature-responsive and magnetic approaches.</p></div></div><h3>Seyedmorteza Mousaviliavali</h3><p class="member-role">PhD Candidate</p></article>
+                    <article class="student-card member-card" tabindex="0"><div class="member-photo member-photo-placeholder"><strong>LW</strong><span>Photo coming soon</span><div class="member-overlay"><p class="member-kicker">Profile</p><p class="member-description">Research profile coming soon.</p></div></div><h3>Linying Wu</h3><p class="member-role">PhD Candidate</p></article>
+                    <article class="student-card member-card" tabindex="0"><div class="member-photo"><img src="assets/images/team/xuheng-li.jpg" alt="Xuheng Li"><div class="member-overlay"><p class="member-kicker">Research focus</p><p class="member-description">My research focuses on biochemical sensors and the biochemical reactions of sensing systems, with the goal of advancing sensor performance through innovative sensing strategies.</p></div></div><h3>Xuheng Li</h3><p class="member-role">PhD Candidate</p></article>
+                    <article class="student-card member-card" tabindex="0"><div class="member-photo"><img src="assets/images/team/pengran.jpg" alt="Pengran Wang"><div class="member-overlay"><p class="member-kicker">Research focus</p><p class="member-description">My proposed research focuses on droplet-microfluidically fabricated magnetic microrobots for controlled cargo transport, magnetic targeting, and localized release.</p></div></div><h3>Pengran Wang</h3><p class="member-role">MPhil Candidate</p></article>
+                    <article class="student-card member-card" tabindex="0"><div class="member-photo"><img src="assets/images/team/yunxiang-zhang.jpg" alt="Yunxiang Zhang"><div class="member-overlay"><p class="member-kicker">Research focus</p><p class="member-description">My research focuses on electrochemical aptamer-based biosensors for continuous therapeutic drug monitoring, combining nanostructured materials, antifouling interfaces, and probe engineering.</p></div></div><h3>Yunxiang Zhang</h3><p class="member-role">MPhil Candidate</p></article>
+                    <article class="student-card member-card" tabindex="0"><div class="member-photo"><img src="assets/images/team/yinglun-ma.jpg" alt="Yinglun Ma"><div class="member-overlay"><p class="member-kicker">Research focus</p><p class="member-description">My research focuses on droplet microfluidics for biomedical detection and high-throughput, absolute quantification of ultra-low-concentration biomarkers.</p></div></div><h3>Yinglun Ma</h3><p class="member-role">MPhil Candidate</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section id="join" class="join-banner reveal">
+            <div class="site-container join-grid">
+                <div><p class="eyebrow light">Build the future with us</p><h2>Curious minds.<br>Meaningful impact.</h2></div>
+                <div><p>We welcome motivated students and researchers who want to work across droplet microfluidics, lab-on-chip systems, biosensors, and biomedical engineering.</p><a class="button button-yellow" href="join-us.html">Explore opportunities</a></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="modern-footer">
+        <div class="site-container footer-grid"><div><strong>Microfluidics &amp; Microfabrication Lab</strong><p>School of Mechanical &amp; Manufacturing Engineering<br>UNSW Sydney</p></div><div><a href="mailto:ming.li3@unsw.edu.au">ming.li3@unsw.edu.au</a><p>Ainsworth Building J17, Room 402C<br>Sydney NSW 2052</p></div><div class="footer-links"><a href="research.html">Research</a><a href="publication.html">Publications</a><a href="join-us.html">Join us</a></div></div>
+    </footer>
+
+    <script src="site.js"></script>
 </body>
 </html>

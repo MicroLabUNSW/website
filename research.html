@@ -1,119 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ming Li Lab | UNSW Sydney</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            font-family: "Times New Roman", Times, serif;
-            background-color: #ffffff;
-            background-image:
-                radial-gradient(circle at 18px 18px, rgba(30, 41, 59, 0.06) 0 2px, transparent 2.5px),
-                radial-gradient(circle at 78px 58px, rgba(255, 196, 37, 0.09) 0 2px, transparent 2.5px),
-                linear-gradient(90deg, rgba(30, 41, 59, 0.035) 1px, transparent 1px),
-                linear-gradient(0deg, rgba(30, 41, 59, 0.03) 1px, transparent 1px);
-            background-size: 120px 80px, 120px 80px, 120px 80px, 120px 80px;
-            background-position: 0 0, 0 0, 18px 18px, 18px 18px;
-            color: #1a1a1a;
-        }
-        h1, h2, h3, h4, nav, .section-title {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-        }
-        body::before {
-            content: "";
-            position: fixed;
-            inset: 0;
-            pointer-events: none;
-            background:
-                linear-gradient(135deg, transparent 0 32%, rgba(30, 41, 59, 0.028) 32.3% 33%, transparent 33.3% 100%),
-                linear-gradient(45deg, transparent 0 58%, rgba(255, 196, 37, 0.035) 58.3% 59%, transparent 59.3% 100%);
-            background-size: 360px 240px;
-            opacity: 0.75;
-        }
-        .section-title {
-            font-size: 1rem;
-            font-weight: 900;
-            color: #b91c1c;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            border-bottom: 2px solid #b91c1c;
-            padding-bottom: 2px;
-            margin-bottom: 1.5rem;
-            display: block;
-        }
-        .double-divider { height: 1px; background: linear-gradient(90deg, rgba(185, 28, 28, 0.65), rgba(255, 196, 37, 0.7), rgba(26, 26, 26, 0.12)); margin: 2rem 0; }
-        .justify-news { text-align: justify; text-justify: inter-word; }
-    </style>
-</head>
-<body class="min-h-screen">
-    <div class="min-h-screen w-full px-5 py-8 md:px-12 md:py-10">
-        <header class="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-6 mb-8">
-            <div>
-                <h1 class="text-2xl md:text-3xl font-black tracking-normal uppercase leading-none">Microfluidics and Microfabrication <span class="font-light">Lab</span></h1>
-                <p class="text-[10px] font-bold tracking-[0.16em] uppercase mt-2 text-gray-500">Mechanical & Manufacturing Engineering | UNSW Sydney</p>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Research in Droplet, Lab on Chip, and Biosensors at the Ming Li Lab."><title>Research | Ming Li Lab</title><script>document.documentElement.classList.add('js-enabled');</script><link rel="stylesheet" href="styles.css"></head>
+<body class="home-page inner-page">
+<header class="site-header"><div class="site-container nav-shell"><a class="brand" href="index.html"><span class="brand-mark">ML</span><span><strong>Microfluidics &amp; Microfabrication</strong><small>Lab · UNSW Sydney</small></span></a><nav class="main-nav"><a href="index.html">Home</a><a class="active" href="research.html">Research</a><a href="about-us.html">Our People</a><a href="publication.html">Publications</a><a href="join-us.html">Join Us</a></nav></div></header>
+<main>
+    <section class="section-block research-home research-standalone">
+        <div class="site-container">
+            <div class="section-heading-row"><h1>Research areas</h1></div>
+            <div class="research-hover-grid">
+                <a class="research-hover-card" href="research-droplet-microfluidics.html"><img src="assets/images/research-droplet-cover.jpg" alt="Droplet research cover"><div class="research-card-shade"></div><span class="research-number">01</span><div class="research-card-copy"><h2>Droplet</h2><p>High-throughput droplets for single-cell analysis, molecular detection, synthesis, and 3D culture.</p><span>Explore the research ↗</span></div></a>
+                <a class="research-hover-card" href="research-lab-on-chip.html"><img src="assets/images/research-lab-on-chip-cover.jpg" alt="Lab on Chip research cover"><div class="research-card-shade"></div><span class="research-number">02</span><div class="research-card-copy"><h2>Lab on Chip</h2><p>Integrated microfluidic chips for cell analysis, controlled biological models, and drug screening.</p><span>Explore the research ↗</span></div></a>
+                <a class="research-hover-card" href="research-biosensors.html"><img src="assets/images/research-biosensors-cover.jpg" alt="Biosensors research cover"><div class="research-card-shade"></div><span class="research-number">03</span><div class="research-card-copy"><h2>Biosensors</h2><p>Integrated platforms for sensitive, selective, and continuous biomarker measurement.</p><span>Explore the research ↗</span></div></a>
             </div>
-            <nav class="flex flex-nowrap items-center justify-start lg:justify-end gap-5 text-xs font-bold uppercase tracking-widest italic whitespace-nowrap overflow-x-auto max-w-full">
-                <a href="index.html" class="hover:text-red-800 border-b border-transparent hover:border-red-800">Home</a>
-                <a href="about-us.html" class="hover:text-red-800 border-b border-transparent hover:border-red-800">About Us</a>
-                <a href="research.html" class="text-red-800 border-b border-red-800">Research</a>
-                <a href="publication.html" class="hover:text-red-800 border-b border-transparent hover:border-red-800">Publications</a>
-                <a href="join-us.html" class="hover:text-red-800 border-b border-transparent hover:border-red-800">Join Us</a>
-            </nav>
-        </header>
-        <div class="double-divider"></div>
-        <main>
-            <section class="mb-16">
-                <span class="section-title">Research Activities</span>
-                <p class="text-sm justify-news leading-relaxed mb-8 italic text-gray-600">
-                    Our research leverages fluid mechanics, biomedical engineering, and advanced manufacturing to solve diagnostic and environmental challenges.
-                </p>
-                <div class="space-y-8 text-[13px]">
-                    <div class="grid md:grid-cols-12 gap-6 border-t border-gray-200 pt-6 items-start">
-                        <div class="md:col-span-4 h-44 bg-gray-50 border border-gray-200 flex items-center justify-center">
-                            <span class="text-[9px] uppercase tracking-widest text-gray-400">Image</span>
-                        </div>
-                        <div class="md:col-span-8">
-                            <h4 class="font-bold text-red-800 uppercase mb-2">Primary Interests</h4>
-                            <p class="leading-relaxed">Microfluidics, biosensors, MEMS, and lab-on-a-chip platforms.</p>
-                        </div>
-                    </div>
-                    <div class="grid md:grid-cols-12 gap-6 border-t border-gray-200 pt-6 items-start">
-                        <div class="md:col-span-4 h-44 bg-gray-50 border border-gray-200 flex items-center justify-center">
-                            <span class="text-[9px] uppercase tracking-widest text-gray-400">Image</span>
-                        </div>
-                        <div class="md:col-span-8">
-                            <h4 class="font-bold text-red-800 uppercase mb-2">Applied Focus</h4>
-                            <p class="leading-relaxed">Health assessment, diagnostics, environmental sensing, and renewable energy.</p>
-                        </div>
-                    </div>
-                    <div class="grid md:grid-cols-12 gap-6 border-t border-gray-200 pt-6 items-start">
-                        <div class="md:col-span-4 h-44 bg-gray-50 border border-gray-200 flex items-center justify-center">
-                            <span class="text-[9px] uppercase tracking-widest text-gray-400">Image</span>
-                        </div>
-                        <div class="md:col-span-8">
-                            <h4 class="font-bold text-red-800 uppercase mb-2">Methods</h4>
-                            <p class="leading-relaxed">Device design, microfabrication, experimental fluid mechanics, and biomedical instrumentation.</p>
-                        </div>
-                    </div>
-                    <div class="grid md:grid-cols-12 gap-6 border-t border-gray-200 pt-6 items-start">
-                        <div class="md:col-span-4 h-44 bg-gray-50 border border-gray-200 flex items-center justify-center">
-                            <span class="text-[9px] uppercase tracking-widest text-gray-400">Image</span>
-                        </div>
-                        <div class="md:col-span-8">
-                            <h4 class="font-bold text-red-800 uppercase mb-2">Translation</h4>
-                            <p class="leading-relaxed">Practical systems that connect laboratory prototypes with real diagnostic and monitoring needs.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer class="mt-16 pt-6 border-t-2 border-black flex flex-col md:flex-row justify-between items-center text-[10px] font-bold uppercase tracking-[0.2em] text-gray-500">
-            <div>Email</div>
-            <div class="my-4 md:my-0 text-red-800 border border-red-800 px-4 py-1">Join the Group</div>
-            <div>Sydney, NSW 2052</div>
-        </footer>
-    </div>
-</body>
-</html>
+        </div>
+    </section>
+</main>
+<footer class="modern-footer"><div class="site-container footer-grid"><div><strong>Microfluidics &amp; Microfabrication Lab</strong><p>School of Mechanical &amp; Manufacturing Engineering<br>UNSW Sydney</p></div><div><a href="mailto:ming.li3@unsw.edu.au">ming.li3@unsw.edu.au</a><p>Ainsworth Building J17, Room 402C<br>Sydney NSW 2052</p></div><div class="footer-links"><a href="research.html">Research</a><a href="publication.html">Publications</a><a href="join-us.html">Join us</a></div></div></footer><script src="site.js"></script>
+</body></html>
