@@ -48,3 +48,37 @@ const revealObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.1, rootMargin: '0px 0px -35px' });
 
 document.querySelectorAll('.reveal').forEach((section) => revealObserver.observe(section));
+
+// Mobile home: native vertical section snapping, with horizontal card browsing.
+if (document.body.matches('.home-page:not(.inner-page)')) {
+    const mobileHome = window.matchMedia('(max-width: 760px)');
+    const header = document.querySelector('.site-header');
+    const peopleContainer = document.querySelector('#students > .site-container');
+    const spotlight = peopleContainer?.querySelector('.pi-spotlight');
+    let leadershipPanel;
+
+    const updateMobileHome = () => {
+        document.documentElement.classList.toggle('mobile-home-snap', mobileHome.matches);
+        if (mobileHome.matches && spotlight && !leadershipPanel) {
+            leadershipPanel = document.createElement('section');
+            leadershipPanel.id = 'mobile-leadership';
+            leadershipPanel.className = 'section-block people-home';
+            leadershipPanel.setAttribute('aria-label', 'Principal investigator');
+            const container = document.createElement('div');
+            container.className = 'site-container';
+            container.append(spotlight);
+            leadershipPanel.append(container);
+            document.querySelector('#students').before(leadershipPanel);
+        } else if (!mobileHome.matches && leadershipPanel) {
+            peopleContainer.prepend(spotlight);
+            leadershipPanel.remove();
+            leadershipPanel = null;
+        }
+        document.documentElement.style.setProperty('--mobile-header-height', `${header.getBoundingClientRect().height}px`);
+    };
+    mobileHome.addEventListener('change', updateMobileHome);
+    new ResizeObserver(() => {
+        document.documentElement.style.setProperty('--mobile-header-height', `${header.getBoundingClientRect().height}px`);
+    }).observe(header);
+    updateMobileHome();
+}
