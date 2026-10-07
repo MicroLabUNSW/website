@@ -1450,11 +1450,15 @@ html.js-enabled body.research-detail-page.page-leaving {
     .mobile-home-snap .home-page .section-heading-row h2 { font-size: 32px; line-height: 1.1; }
     .mobile-home-snap .home-page .section-heading-row .button { min-height: 36px; font-size: 9px; padding: 0 12px; }
     .mobile-home-snap .home-page :is(.research-hover-grid, .featured-pub-grid, .student-grid) {
-        display: grid; grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 100%;
-        gap: 16px; overflow-x: auto; padding-bottom: 12px; scroll-snap-type: x mandatory;
-        overscroll-behavior-x: contain; scrollbar-width: thin;
+        display: block; overflow: visible; padding: 0; scroll-snap-type: none;
     }
-    .mobile-home-snap .home-page :is(.research-hover-card, .featured-pub-card, .student-card) { scroll-snap-align: start; scroll-snap-stop: always; min-width: 0; }
+    .mobile-home-snap .home-page > main > section.mobile-card-section { display: block; padding: 0; scroll-snap-align: none; }
+    .mobile-home-snap .mobile-card-section > .site-container > .section-heading-row { display: none; }
+    .mobile-home-snap .mobile-card-panel {
+        min-height: var(--mobile-panel-height); padding: 24px 0; display: flex;
+        flex-direction: column; justify-content: center; scroll-snap-align: start; scroll-snap-stop: always;
+    }
+    .mobile-home-snap .home-page :is(.research-hover-card, .featured-pub-card, .student-card) { display: block; min-width: 0; width: 100%; }
     .mobile-home-snap .home-page #research-areas .research-hover-card { height: min(440px, calc(var(--mobile-panel-height) - 150px)); min-height: 240px; }
     .mobile-home-snap .home-page .research-card-copy { left: 22px; right: 22px; bottom: 24px; }
     .mobile-home-snap .home-page .research-card-copy h3 { font-size: 30px; }
@@ -1468,8 +1472,7 @@ html.js-enabled body.research-detail-page.page-leaving {
     .mobile-home-snap .home-page #students .student-card h3 { font-size: 20px; margin-top: 12px; }
     .mobile-home-snap .home-page #students .member-overlay .member-description { font-size: 13px; line-height: 1.5; }
     .mobile-home-snap .home-page :is(#research-areas, #featured-publications, #students) > .site-container::after {
-        content: "Swipe left or right to explore ↔"; display: block; margin-top: 12px;
-        font-size: 11px; color: var(--muted); text-align: center;
+        content: none;
     }
     .mobile-home-snap .home-page #mobile-leadership { order: 5; }
     .mobile-home-snap .home-page #students { order: 6; }

@@ -49,16 +49,42 @@ const revealObserver = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach((section) => revealObserver.observe(section));
 
-// Mobile home: native vertical section snapping, with horizontal card browsing.
+// Mobile home: every section and card is a vertical swipe destination.
 if (document.body.matches('.home-page:not(.inner-page)')) {
     const mobileHome = window.matchMedia('(max-width: 760px)');
     const header = document.querySelector('.site-header');
     const peopleContainer = document.querySelector('#students > .site-container');
     const spotlight = peopleContainer?.querySelector('.pi-spotlight');
     let leadershipPanel;
+    const cardGrids = [...document.querySelectorAll('.research-hover-grid, .featured-pub-grid, #students .student-grid')];
+
+    const updateCardPanels = () => cardGrids.forEach((grid) => {
+        const section = grid.closest('section');
+        if (mobileHome.matches && !grid.classList.contains('mobile-card-stack')) {
+            const heading = section.querySelector('.section-heading-row');
+            [...grid.children].forEach((card, index) => {
+                const panel = document.createElement('div');
+                panel.className = 'mobile-card-panel';
+                card.before(panel);
+                if (index === 0) {
+                    const panelHeading = heading.cloneNode(true);
+                    panelHeading.querySelectorAll('[id]').forEach((element) => element.removeAttribute('id'));
+                    panel.append(panelHeading);
+                }
+                panel.append(card);
+            });
+            grid.classList.add('mobile-card-stack');
+            section.classList.add('mobile-card-section');
+        } else if (!mobileHome.matches && grid.classList.contains('mobile-card-stack')) {
+            [...grid.children].forEach((panel) => panel.replaceWith(panel.lastElementChild));
+            grid.classList.remove('mobile-card-stack');
+            section.classList.remove('mobile-card-section');
+        }
+    });
 
     const updateMobileHome = () => {
         document.documentElement.classList.toggle('mobile-home-snap', mobileHome.matches);
+        updateCardPanels();
         if (mobileHome.matches && spotlight && !leadershipPanel) {
             leadershipPanel = document.createElement('section');
             leadershipPanel.id = 'mobile-leadership';
