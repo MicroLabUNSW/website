@@ -7,15 +7,87 @@ window.ORCID_PUBLICATIONS = [
   },
   {
     "year": "2026",
+    "title": "Advances in reagent addition for droplet-based microfluidics: from interfacial engineering to high-throughput screening",
+    "journal": "npj Soft Matter",
+    "doi": "10.1038/s44431-026-00037-6"
+  },
+  {
+    "year": "2026",
+    "title": "Advances in targeted protein degradation for cancer immunotherapy",
+    "journal": "Cell Biomaterials",
+    "doi": "10.1016/j.celbio.2026.100403"
+  },
+  {
+    "year": "2026",
+    "title": "Antifouling zwitterionic coating enhances electrochemical aptamer-based sensors for therapeutic drug monitoring",
+    "journal": "Nano Today",
+    "doi": "10.1016/j.nantod.2025.102892"
+  },
+  {
+    "year": "2026",
+    "title": "Artificial intelligence for CRISPR-based biosensing: From molecular design to assay intelligence",
+    "journal": "Trends in Analytical Chemistry",
+    "doi": "10.1016/j.trac.2026.119061"
+  },
+  {
+    "year": "2026",
     "title": "Droplet digital CRISPR for nucleic acid detection",
     "journal": "Advanced Science",
     "doi": "10.1002/advs.202517470"
   },
   {
     "year": "2026",
+    "title": "Enhancing Safety in Aquaculture with Nanostructures: Hazard Detection and Elimination",
+    "journal": "Engineering",
+    "doi": "10.1016/j.eng.2025.07.044"
+  },
+  {
+    "year": "2026",
     "title": "High-throughput generation of tumor spheroids via droplet microfluidics for siRNA-loaded nanomedicine assessment",
     "journal": "Advanced Healthcare Materials",
     "doi": "10.1002/adhm.202503604"
+  },
+  {
+    "year": "2026",
+    "title": "Integrating Artificial Intelligence With Droplet-Based Microfluidics: Advances, Challenges, and Emerging Opportunities",
+    "journal": "Advanced Intelligent Systems",
+    "doi": "10.1002/aisy.202501074"
+  },
+  {
+    "year": "2026",
+    "title": "Open micro-valley chip reveals long-term viscosity-induced glioblastoma cellular invasion states",
+    "journal": "Microsystems & Nanoengineering",
+    "doi": "10.1038/s41378-026-01241-0"
+  },
+  {
+    "year": "2026",
+    "title": "Particle separation by passive microfluidics and their downstream assays",
+    "journal": "Sensors and Actuators B: Chemical",
+    "doi": "10.1016/j.snb.2025.139295"
+  },
+  {
+    "year": "2026",
+    "title": "Recent Advances in Variable-Stiffness Robotic Systems Enabled by Phase-Change Materials",
+    "journal": "Advanced Robotics Research",
+    "doi": "10.1002/adrr.202500031"
+  },
+  {
+    "year": "2026",
+    "title": "Uniform Microscale Thermoresponsive Liposomes for Controlled Release Above Body Temperature",
+    "journal": "Small",
+    "doi": "10.1002/smll.74496"
+  },
+  {
+    "year": "2025",
+    "title": "Active Microfluidic Platforms for Particle Separation and Integrated Sensing Applications",
+    "journal": "ACS Sensors",
+    "doi": "10.1021/acssensors.5c01896"
+  },
+  {
+    "year": "2025",
+    "title": "Design advances in pinched flow fractionation for enhanced particle separation in microfluidics",
+    "journal": "Lab on a Chip",
+    "doi": "10.1039/d5lc00497g"
   },
   {
     "year": "2025",
@@ -31,9 +103,15 @@ window.ORCID_PUBLICATIONS = [
   },
   {
     "year": "2025",
+    "title": "Double-emulsion droplet digital CRISPR/Cas12a for amplification-free, absolute quantification of nucleic acids at attomole levels",
+    "journal": "Chemical Engineering Journal",
+    "doi": "10.1016/j.cej.2025.162098"
+  },
+  {
+    "year": "2025",
     "title": "Microfluidic femtosecond laser-induced nucleation of supersaturated aqueous D-serine solutions",
     "journal": "CrystEngComm",
-    "doi": "10.1039/D5CE00481K"
+    "doi": "10.1039/d5ce00481k"
   },
   {
     "year": "2025",
@@ -48,16 +126,40 @@ window.ORCID_PUBLICATIONS = [
     "doi": "10.1016/j.applthermaleng.2024.124605"
   },
   {
+    "year": "2025",
+    "title": "Ring-Shaped Open Microfluidic Platform Reveals Viscosity-Driven Mechanical Priming of Glioblastoma Cells",
+    "journal": "ACS Sensors",
+    "doi": "10.1021/acssensors.5c02716"
+  },
+  {
+    "year": "2025",
+    "title": "Serendipity Engineering with Photonics: Harnessing the Unexpected in Biology and Medicine",
+    "journal": "Progress In Electromagnetics Research",
+    "doi": "10.2528/pier25100702"
+  },
+  {
+    "year": "2025",
+    "title": "Shape-Modified Ultrathin Glass Sheet Cantilever for Precise Single Cell Stiffness Measurement",
+    "journal": "ACS Measurement Science Au",
+    "doi": "10.1021/acsmeasuresciau.4c00074"
+  },
+  {
+    "year": "2025",
+    "title": "Stimuli-responsive smart materials enabled high-performance biosensors for liquid biopsies",
+    "journal": "Journal of Nanobiotechnology",
+    "doi": "10.1186/s12951-025-03541-5"
+  },
+  {
+    "year": "2025",
+    "title": "Wearable Electrochemical Biosensors for Advanced Healthcare Monitoring",
+    "journal": "Advanced Science",
+    "doi": "10.1002/advs.202411433"
+  },
+  {
     "year": "2024",
     "title": "A pendulum-type electrochemical aptamer-based sensor for continuous, real-time and stable detection of proteins",
     "journal": "Talanta",
     "doi": "10.1016/j.talanta.2023.125026"
-  },
-  {
-    "year": "2024",
-    "title": "AG-Meta",
-    "journal": "Pattern Recognition",
-    "doi": "10.1016/j.patcog.2024.110387"
   },
   {
     "year": "2024",
@@ -98,7 +200,7 @@ window.ORCID_PUBLICATIONS = [
   {
     "year": "2024",
     "title": "High-throughput optical imaging technology for large-scale single-cell analysis of live Euglena gracilis",
-    "journal": "TrAC - Trends in Analytical Chemistry",
+    "journal": "Trends in Analytical Chemistry",
     "doi": "10.1016/j.trac.2024.117938"
   },
   {
@@ -130,12 +232,6 @@ window.ORCID_PUBLICATIONS = [
     "title": "A CRISPR-Cas12a powered electrochemical sensor based on gold nanoparticles and MXene composite for enhanced nucleic acid detection",
     "journal": "Sensors and Actuators B: Chemical",
     "doi": "10.1016/j.snb.2023.133342"
-  },
-  {
-    "year": "2023",
-    "title": "A review on intelligent impedance cytometry systems",
-    "journal": "Analytica Chimica Acta",
-    "doi": "10.1016/j.aca.2023.341424"
   },
   {
     "year": "2023",
@@ -189,7 +285,7 @@ window.ORCID_PUBLICATIONS = [
     "year": "2023",
     "title": "Multi-position measurable flow velocity sensor for microfluidic applications",
     "journal": "IEEE Sensors Journal",
-    "doi": "10.1109/JSEN.2022.3225637"
+    "doi": "10.1109/jsen.2022.3225637"
   },
   {
     "year": "2023",
@@ -212,7 +308,7 @@ window.ORCID_PUBLICATIONS = [
   {
     "year": "2022",
     "title": "Assessment of the electrical penetration of cell membranes using four-frequency impedance cytometry",
-    "journal": "Microsystems and Nanoengineering",
+    "journal": "Microsystems & Nanoengineering",
     "doi": "10.1038/s41378-022-00405-y"
   },
   {
@@ -242,7 +338,7 @@ window.ORCID_PUBLICATIONS = [
   {
     "year": "2022",
     "title": "Length-based separation of Bacillus subtilis bacterial populations by viscoelastic microfluidics",
-    "journal": "Microsystems and Nanoengineering",
+    "journal": "Microsystems & Nanoengineering",
     "doi": "10.1038/s41378-021-00333-3"
   },
   {
@@ -259,13 +355,13 @@ window.ORCID_PUBLICATIONS = [
   },
   {
     "year": "2022",
-    "title": "Recent advances in microfluidic devices for single-cell cultivation",
+    "title": "Recent advances in microfluidic devices for single-cell cultivation: methods and applications",
     "journal": "Lab on a Chip",
     "doi": "10.1039/d1lc01030a"
   },
   {
     "year": "2022",
-    "title": "Rotation of biological cells",
+    "title": "Rotation of biological cells: fundamentals and applications",
     "journal": "Engineering",
     "doi": "10.1016/j.eng.2020.07.031"
   },
@@ -295,8 +391,8 @@ window.ORCID_PUBLICATIONS = [
   },
   {
     "year": "2021",
-    "title": "Glass based micro total analysis systems",
-    "journal": "Sensors and Actuators, B: Chemical",
+    "title": "Glass based micro total analysis systems: materials, fabrication methods, and applications",
+    "journal": "Sensors and Actuators B: Chemical",
     "doi": "10.1016/j.snb.2021.129859"
   },
   {
@@ -361,7 +457,7 @@ window.ORCID_PUBLICATIONS = [
   },
   {
     "year": "2020",
-    "title": "Mechanical properties of single cells",
+    "title": "Mechanical properties of single cells: measurement methods and applications",
     "journal": "Biotechnology Advances",
     "doi": "10.1016/j.biotechadv.2020.107648"
   },
@@ -444,12 +540,6 @@ window.ORCID_PUBLICATIONS = [
     "doi": "10.1039/c6lc01118g"
   },
   {
-    "year": "2016",
-    "title": "Inertial focusing of ellipsoidal: Euglena gracilis cells in a stepped microchannel",
-    "journal": "Lab on a Chip",
-    "doi": "10.1039/c6lc01118g"
-  },
-  {
     "year": "2015",
     "title": "Label-free, zeptomole cancer biomarker detection by surface-enhanced fluorescence on nanoporous gold disk plasmonic nanoparticles",
     "journal": "Journal of Biophotonics",
@@ -465,18 +555,12 @@ window.ORCID_PUBLICATIONS = [
     "year": "2015",
     "title": "Reagent- and separation-free measurements of urine creatinine concentration using stamping surface enhanced Raman scattering (S-SERS)",
     "journal": "Biomedical Optics Express",
-    "doi": "10.1364/BOE.6.000849"
-  },
-  {
-    "year": "2015",
-    "title": "Reagent-and separation-free measurements of urine creatinine concentration using stamping surface enhanced Raman scattering (S-SERS)",
-    "journal": "Biomedical Optics Express",
-    "doi": "10.1364/BOE.6.000849"
+    "doi": "10.1364/boe.6.000849"
   },
   {
     "year": "2014",
     "title": "A review of microfabrication techniques and dielectrophoretic microdevices for particle manipulation and separation",
-    "journal": "Journal of Physics D-Applied Physics",
+    "journal": "Journal of Physics D: Applied Physics",
     "doi": "10.1088/0022-3727/47/6/063001"
   },
   {
@@ -489,13 +573,7 @@ window.ORCID_PUBLICATIONS = [
     "year": "2014",
     "title": "Microfluidic surface-enhanced Raman scattering sensor with monolithically integrated nanoporous gold disk arrays for rapid and label-free biomolecular detection",
     "journal": "Journal of Biomedical Optics",
-    "doi": "10.1117/1.JBO.19.11.111611"
-  },
-  {
-    "year": "2014",
-    "title": "On-chip high-throughput manipulation of particles in a dielectrophoresis- active hydrophoretic focuser",
-    "journal": "Scientific Reports",
-    "doi": "10.1038/srep05060"
+    "doi": "10.1117/1.jbo.19.11.111611"
   },
   {
     "year": "2014",
@@ -542,12 +620,6 @@ window.ORCID_PUBLICATIONS = [
   {
     "year": "2013",
     "title": "Inertial focusing in a straight channel with asymmetrical expansion-contraction cavity arrays using two secondary flows",
-    "journal": "Journal of Micromechanics and Microengineering",
-    "doi": "10.1088/0960-1317/23/8/085023"
-  },
-  {
-    "year": "2013",
-    "title": "Inertial focusing in a straight channel with asymmetrical expansion–contraction cavity arrays using two secondary flows",
     "journal": "Journal of Micromechanics and Microengineering",
     "doi": "10.1088/0960-1317/23/8/085023"
   },

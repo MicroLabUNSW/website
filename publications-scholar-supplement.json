@@ -1,0 +1,30 @@
+{
+  "checked_on": "2026-10-08",
+  "profile": "https://scholar.google.com/citations?user=F_DoUloAAAAJ&hl=en",
+  "note": "Journal articles found on Ming Li's Scholar profile and checked against Crossref/publisher metadata. Years use the publisher's issue year where available. Conference abstracts, preprints, duplicate translations and unverified same-name authors are excluded.",
+  "articles": [
+    {"year":"2025","title":"Active Microfluidic Platforms for Particle Separation and Integrated Sensing Applications","journal":"ACS Sensors","doi":"10.1021/acssensors.5c01896"},
+    {"year":"2025","title":"Design advances in pinched flow fractionation for enhanced particle separation in microfluidics","journal":"Lab on a Chip","doi":"10.1039/d5lc00497g"},
+    {"year":"2026","title":"Recent Advances in Variable-Stiffness Robotic Systems Enabled by Phase-Change Materials","journal":"Advanced Robotics Research","doi":"10.1002/adrr.202500031"},
+    {"year":"2025","title":"Stimuli-responsive smart materials enabled high-performance biosensors for liquid biopsies","journal":"Journal of Nanobiotechnology","doi":"10.1186/s12951-025-03541-5"},
+    {"year":"2026","title":"Particle separation by passive microfluidics and their downstream assays","journal":"Sensors and Actuators B: Chemical","doi":"10.1016/j.snb.2025.139295"},
+    {"year":"2026","title":"Integrating Artificial Intelligence With Droplet-Based Microfluidics: Advances, Challenges, and Emerging Opportunities","journal":"Advanced Intelligent Systems","doi":"10.1002/aisy.202501074"},
+    {"year":"2025","title":"Shape-Modified Ultrathin Glass Sheet Cantilever for Precise Single Cell Stiffness Measurement","journal":"ACS Measurement Science Au","doi":"10.1021/acsmeasuresciau.4c00074"},
+    {"year":"2026","title":"Advances in targeted protein degradation for cancer immunotherapy","journal":"Cell Biomaterials","doi":"10.1016/j.celbio.2026.100403"},
+    {"year":"2025","title":"Ring-Shaped Open Microfluidic Platform Reveals Viscosity-Driven Mechanical Priming of Glioblastoma Cells","journal":"ACS Sensors","doi":"10.1021/acssensors.5c02716"},
+    {"year":"2026","title":"Artificial intelligence for CRISPR-based biosensing: From molecular design to assay intelligence","journal":"Trends in Analytical Chemistry","doi":"10.1016/j.trac.2026.119061"},
+    {"year":"2025","title":"Serendipity Engineering with Photonics: Harnessing the Unexpected in Biology and Medicine","journal":"Progress In Electromagnetics Research","doi":"10.2528/pier25100702"},
+    {"year":"2026","title":"Uniform Microscale Thermoresponsive Liposomes for Controlled Release Above Body Temperature","journal":"Small","doi":"10.1002/smll.74496"},
+    {"year":"2026","title":"Open micro-valley chip reveals long-term viscosity-induced glioblastoma cellular invasion states","journal":"Microsystems & Nanoengineering","doi":"10.1038/s41378-026-01241-0"},
+    {"year":"2026","title":"Advances in reagent addition for droplet-based microfluidics: from interfacial engineering to high-throughput screening","journal":"npj Soft Matter","doi":"10.1038/s44431-026-00037-6"},
+    {"year":"2026","title":"Enhancing Safety in Aquaculture with Nanostructures: Hazard Detection and Elimination","journal":"Engineering","doi":"10.1016/j.eng.2025.07.044"},
+    {"year":"2025","title":"Microfluidic femtosecond laser-induced nucleation of supersaturated aqueous D-serine solutions","journal":"CrystEngComm","doi":"10.1039/d5ce00481k"}
+  ],
+  "excluded": [
+    {"title":"AG-Meta: adaptive graph meta-learning via representation consistency over local subgraphs","doi":"10.1016/j.patcog.2024.110387","reason":"Crossref identifies Ming Li as ORCID 0000-0002-1218-2804, not the lab PI. Removed from the previous ORCID-derived list."},
+    {"title":"SFCANet: Channel Attention in Spatial-Frequency Domain for Infrared Small Target Detection","doi":"10.1109/taes.2025.3577586","reason":"Crossref identifies Ming Li as ORCID 0000-0002-1218-2804, Guangxi Normal University, not the lab PI."}
+  ],
+  "pending_author_verification": [
+    {"title":"Optimization of CRISPR/Cas12f1 guide RNAs using AlphaFold 3 for enhanced nucleic acid detection","doi":"10.1016/j.microc.2025.113194","reason":"Listed on Scholar, but Crossref provides neither Ming Li's ORCID nor affiliation; publisher author-affiliation access requires CAPTCHA. Not added until identity can be confirmed."}
+  ]
+}

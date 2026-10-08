@@ -55,6 +55,9 @@ if (document.body.matches('.home-page:not(.inner-page)')) {
     const header = document.querySelector('.site-header');
     const peopleContainer = document.querySelector('#students > .site-container');
     const spotlight = peopleContainer?.querySelector('.pi-spotlight');
+    const membersHeading = peopleContainer?.querySelector('.section-heading-row');
+    const bioParagraphs = [...(spotlight?.querySelectorAll('.pi-career-bio, .pi-research-bio') || [])];
+    const bioPanels = [];
     let leadershipPanel;
     const cardGrids = [...document.querySelectorAll('.research-hover-grid, .featured-pub-grid, #students .student-grid')];
 
@@ -66,7 +69,7 @@ if (document.body.matches('.home-page:not(.inner-page)')) {
                 const panel = document.createElement('div');
                 panel.className = 'mobile-card-panel';
                 card.before(panel);
-                if (index === 0) {
+                if (index === 0 && !grid.matches('.student-grid')) {
                     const panelHeading = heading.cloneNode(true);
                     panelHeading.querySelectorAll('[id]').forEach((element) => element.removeAttribute('id'));
                     panel.append(panelHeading);
@@ -92,11 +95,29 @@ if (document.body.matches('.home-page:not(.inner-page)')) {
             leadershipPanel.setAttribute('aria-label', 'Principal investigator');
             const container = document.createElement('div');
             container.className = 'site-container';
+            if (membersHeading) container.append(membersHeading);
             container.append(spotlight);
             leadershipPanel.append(container);
             document.querySelector('#students').before(leadershipPanel);
+            bioParagraphs.forEach((paragraph, index) => {
+                const panel = document.createElement('section');
+                panel.className = 'section-block mobile-pi-bio-panel';
+                const content = document.createElement('div');
+                content.className = 'site-container';
+                const title = document.createElement('h2');
+                title.textContent = index === 0 ? 'Ming Li · Biography' : 'Ming Li · Research';
+                content.append(title, paragraph);
+                panel.append(content);
+                panel.style.order = '4';
+                document.querySelector('#students').before(panel);
+                bioPanels.push(panel);
+            });
         } else if (!mobileHome.matches && leadershipPanel) {
-            peopleContainer.prepend(spotlight);
+            if (membersHeading) peopleContainer.prepend(membersHeading, spotlight);
+            else peopleContainer.prepend(spotlight);
+            const links = spotlight.querySelector('.profile-links');
+            bioParagraphs.forEach((paragraph) => links.before(paragraph));
+            bioPanels.splice(0).forEach((panel) => panel.remove());
             leadershipPanel.remove();
             leadershipPanel = null;
         }

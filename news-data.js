@@ -3,21 +3,15 @@
 const labNews = [
     {
         date: '2026-06',
-        title: 'Pengran Wang joins our lab as an MPhil candidate.',
-        url: 'about-us.html',
-        linkLabel: 'Meet Pengran Wang'
+        title: 'Pengran Wang joins our group as an MPhil candidate.'
     },
     {
         date: '2026-03',
-        title: 'Yang Zhang and colleagues publish their review of droplet digital CRISPR in Advanced Science.',
-        url: 'https://doi.org/10.1002/advs.202517470',
-        linkLabel: 'Read the Advanced Science review'
+        title: 'Yang Zhang’s review article on droplet digital CRISPR publishes in Advanced Science.'
     },
     {
         date: '2026-01',
-        title: 'Reza Khodadadi joins our lab as a PhD candidate.',
-        url: 'about-us.html',
-        linkLabel: 'Meet Reza Khodadadi'
+        title: 'Reza Khodadadi joins our group as a PhD candidate.'
     }
 ];
 
@@ -42,15 +36,7 @@ document.querySelectorAll('[data-news-list]').forEach((list) => {
         const copy = document.createElement('p');
         copy.className = 'news-sentence';
         copy.textContent = news.title;
-        const link = document.createElement('a');
-        link.href = news.url;
-        link.textContent = '↗';
-        link.setAttribute('aria-label', news.linkLabel);
-        if (news.url.startsWith('https://')) {
-            link.target = '_blank';
-            link.rel = 'noopener';
-        }
-        article.append(date, copy, link);
+        article.append(date, copy);
         list.append(article);
     });
 });
