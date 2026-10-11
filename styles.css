@@ -1636,7 +1636,7 @@ html.js-enabled body.research-detail-page.page-leaving {
 
 /* Compact right-aligned desktop navigation and research overview. */
 @media (min-width: 1101px) {
-    .home-page:not(.inner-page) .main-nav { flex: 0 0 auto; justify-content: flex-end; margin-left: auto; gap: 26px; }
+    .home-page .main-nav { flex: 0 0 auto; justify-content: flex-end; margin-left: auto; gap: 26px; }
 }
 .research-overview-heading { align-items: flex-start; gap: 36px; }
 .research-overview-heading .page-main-title { flex: 0 0 34%; }
