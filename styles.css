@@ -223,7 +223,7 @@ body.home-page h3 {
 .join-grid { display: grid; grid-template-columns: 1fr .8fr; gap: 100px; align-items: center; }
 .join-grid h2 { color: #fff; font-size: clamp(50px, 6vw, 88px); }
 .join-grid > div:last-child p { margin: 0 0 30px; font-family: Georgia, serif; font-size: 19px; line-height: 1.65; }
-.modern-footer { padding: 64px 0; background: #050d14; color: #fff; }
+.modern-footer { padding: 32px 0; background: #050d14; color: #fff; }
 .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr .5fr; gap: 60px; }
 .footer-grid strong { font-size: 15px; }
 .footer-grid p { margin: 12px 0 0; color: #9aa7b1; font-family: Georgia, serif; font-size: 12px; line-height: 1.7; }
@@ -565,10 +565,10 @@ body.home-page h3 {
 .detail-hero figure { min-height: 310px; padding: 16px; }
 .detail-hero figure img { max-height: 280px; }
 
-.join-banner { padding: clamp(16px, 1.8vw, 22px) 0; }
-.join-grid { gap: clamp(24px, 4vw, 48px); }
+.join-banner { padding: 16px 0; }
+.join-grid { grid-template-columns: minmax(0, 1fr) auto; gap: 32px; }
 .join-banner .eyebrow,.contact-panel .eyebrow { margin-bottom: 8px; }
-.join-grid h2 { font-size: clamp(32px, 3.4vw, 42px); line-height: 1.02; }
+.join-grid h2 { font-size: clamp(28px, 2.5vw, 36px); line-height: 1.2; text-wrap: balance; }
 .join-grid > div:last-child p { margin-bottom: 10px; font-size: 14px; line-height: 1.4; }
 .join-banner .button { min-height: 38px; padding-right:18px; padding-left:18px; }
 .contact-panel { padding: 20px 0; }
@@ -605,7 +605,7 @@ body.home-page h3 {
     .detail-hero figure { min-height:220px; }
     .detail-hero figure img { max-height:190px; }
     .join-banner { padding:12px 0; }
-    .join-grid { gap:14px; }
+    .join-grid { grid-template-columns: 1fr; gap:14px; }
     .join-grid h2 { font-size:30px; }
     .join-grid > div:last-child p { font-size:13px; }
     .contact-panel { padding:14px 0; }
@@ -1632,4 +1632,16 @@ html.js-enabled body.research-detail-page.page-leaving {
     .home-page.inner-page .page-entry > .site-container > .section-heading-row { margin-bottom: 28px; }
     .home-page.inner-page .join-essential .page-main-title { margin-bottom: 28px; }
     .research-story-page .detail-hero-grid > div:first-child > .back-link { top: -22px; }
+}
+
+/* Compact right-aligned desktop navigation and research overview. */
+@media (min-width: 1101px) {
+    .home-page:not(.inner-page) .main-nav { flex: 0 0 auto; justify-content: flex-end; margin-left: auto; gap: 26px; }
+}
+.research-overview-heading { align-items: flex-start; gap: 36px; }
+.research-overview-heading .page-main-title { flex: 0 0 34%; }
+.research-overview-heading > p { flex: 1; margin: 0; color: var(--muted); font-size: 18px; line-height: 1.65; max-width: none; }
+@media (max-width: 760px) {
+    .research-overview-heading { display: flex; flex-direction: column; align-items: flex-start; gap: 20px; }
+    .research-overview-heading > p { font-size: 16px; line-height: 1.6; }
 }
